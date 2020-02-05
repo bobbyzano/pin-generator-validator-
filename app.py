@@ -50,7 +50,7 @@ class generate_pin(Resource):
 
 
 
-api.add_resource(generate_pin, '/') 
+api.add_resource(generate_pin, '/api/generate') 
 
 class validate_pin(Resource):
     def get(self, sn):
@@ -67,7 +67,7 @@ class validate_pin(Resource):
             return{'message':'invalid pin'}
         
 
-api.add_resource(validate_pin, '/<string:sn>')         
+api.add_resource(validate_pin, '/api/generate/validate/<string:sn>')         
     
 
 
