@@ -33,6 +33,8 @@ python-dateutil==2.8.1
 python-debian==0.1.32
 python-editor==1.0.4
 pytz==2018.3
+psycopg2==2.8.4
+psycopg2-binary==2.8.4
 
 
 reportlab==3.4.0
