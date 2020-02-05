@@ -12,7 +12,7 @@ app = Flask(__name__)
 api = Api(app)
 
 # app configuration
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///generate.sqlite3"
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environs['DATABASE_URL'] or "sqlite:///generate.sqlite3"
 app.config['SECRET_KEY'] = "ABCD 12345"
 
 
