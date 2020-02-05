@@ -42,3 +42,4 @@ SQLAlchemy==1.3.13
 
 wadllib==1.3.3
 Werkzeug==0.16.1
+gunicorn==20.0.4
